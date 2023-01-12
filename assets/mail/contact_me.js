@@ -20,7 +20,7 @@ $(function () {
                 firstName = name.split(" ").slice(0, -1).join(" ");
             }
             $this = $("#sendMessageButton");
-            $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
+            $this.prop("disabled", False); // Disable submit button until AJAX call is complete to prevent duplicate messages
             var json = {name: name, phone: phone, email: email, message: message}
             $.ajax({
                 // --- CHANGE THIS LINE TO YOUR OWN API GATEWAY  -------- 
